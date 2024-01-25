@@ -29,17 +29,17 @@ Before proceeding with the Spark installation, ensure your Windows machine meets
     * Add Python to the system PATH.
         * Verify in cmd by using command python --version
 
-## Step-by-Step Installation Guide
+## Installation Guide
 
-### Step 1: Install Winutils
+1. **Install Winutils**
     * Spark on Windows requires Hadoop's winutils.exe.
     * Download the [winutils repository](https://github.com/cdarlint/winutils)
     * Extract the zip file and copy the latest version (Currently it's 3.3.5)
     * Set the HADOOP_HOME variable, using the following command
-      ```
-      setx HADOOP_HOME "C:\hadoop\hadoop-3.3.5"
-      ```
+        ```
+        setx HADOOP_HOME "C:\hadoop\hadoop-3.3.5"
+        ```
     * Add the bin folder into path variable
-      ```
-      setx PATH "%PATH%;%HADOOP_HOME%\bin"
-      ```
+        ```
+        setx PATH "%PATH%;%HADOOP_HOME%\bin"
+        ```
