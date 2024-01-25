@@ -29,6 +29,9 @@ Before proceeding with the Spark installation, ensure your Windows machine meets
     * Add Python to the system PATH.
         * Verify in cmd by using command python --version
 
+
+
+
 ## Installation Guide
 
 1. **Install Winutils**
@@ -42,4 +45,26 @@ Before proceeding with the Spark installation, ensure your Windows machine meets
     * Add the bin folder into path variable
         ```
         setx PATH "%PATH%;%HADOOP_HOME%\bin"
+        ```
+2. **Download Apache Spark**
+    * Download the latest version of Apache Spark from the [official website](https://spark.apache.org/downloads.html)
+    * Since it's .tgz you can either use 7 zip file to extract or using below bash command
+        ```
+        tar -xzvf "spark-3.5.0-bin-hadoop3.tgz"
+        ```
+    * Add the SPARK_HOME variable, using the following command
+        ```
+        setx SPARK_HOME "C:\spark\spark-3.5.0"
+        ```
+    * Add bin folder to the path variable
+        ```
+        setx PATH "%PATH%;%SPARK_HOME%\bin"
+        ```
+    * Add PYTHONPATH variable
+        ```
+        setx PYTHONPATH "C:\spark\spark-3.5.0\python;C:\spark\spark-3.5.0\python\lib\pyspark.zip"
+        ```
+    * Add PYSPARK_PYTHON variable
+        ```
+        setx PYSPARK_PYTHON "C:\Users\testversion\AppData\Local\Programs\Python\Python312\python.exe"
         ```
