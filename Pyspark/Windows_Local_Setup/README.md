@@ -8,7 +8,7 @@ Before proceeding with the Spark installation, ensure your Windows machine meets
 
 1. **Operating System**: Windows 8 or later.
 2. **Java Development Kit (JDK)**: Spark requires JDK to be installed. JDK version 8 or 11 is recommended.
-    * Download JDK from [Oracle's website](https://jdk.java.net/java-se-ri/11-MR2) or adopt an open-source JDK distribution.
+    * Download JDK from <a href="https://jdk.java.net/java-se-ri/11-MR2" target="_blank">Oracle's website</a> or adopt an open-source JDK distribution.
     * Set the JAVA_HOME environment variable to your JDK installation path.
 3. **Python** (optional): For PySpark, Python 3.6 or later is required.
     * Download Python from the official Python website.
