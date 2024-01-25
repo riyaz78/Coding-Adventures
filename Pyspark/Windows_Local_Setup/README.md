@@ -68,3 +68,5 @@ Before proceeding with the Spark installation, ensure your Windows machine meets
         ```
         setx PYSPARK_PYTHON "C:\Users\testversion\AppData\Local\Programs\Python\Python312\python.exe"
         ```
+3. **Download Pycharm community edition for spark development**
+    * Download from the [official website](https://www.jetbrains.com/pycharm/download/?section=windows#section=windows)
