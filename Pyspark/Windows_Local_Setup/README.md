@@ -10,12 +10,12 @@ Before proceeding with the Spark installation, ensure your Windows machine meets
 2. **Java Development Kit (JDK)**: Spark requires JDK to be installed. JDK version 8 or 11 is recommended.
     * Download JDK from [Oracle's website](https://jdk.java.net/java-se-ri/11-MR2) or adopt an open-source JDK distribution.
     * Set the JAVA_HOME environment variable to your JDK installation path *Using cmd*.
-        a. To set the JAVA_HOME variable, use the following command in the cmd:
-           ```cmd
+        * To set the JAVA_HOME variable, use the following command in the cmd:
+           ```
            setx JAVA_HOME "C:\Program Files\Java\jdk-11.0.0.1"
            ```
-        b. Verify by using the command:
-           ```cmd
+        * Verify by using the command:
+           ```
            echo %JAVA_HOME%
            ```
 
