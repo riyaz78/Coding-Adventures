@@ -1,9 +1,9 @@
 # Requirements for Spark Setup in Windows
 
-## Introduction
+### Introduction
 This document provides detailed instructions for setting up Apache Spark on a Windows machine. Apache Spark is an open-source, distributed computing system that offers a robust framework for data processing and analytics.
 
-## Prerequisites
+### Prerequisites
 Before proceeding with the Spark installation, ensure your Windows machine meets the following prerequisites:
 
 1. **Operating System**: Windows 8 or later.
@@ -18,7 +18,28 @@ Before proceeding with the Spark installation, ensure your Windows machine meets
            ```
            echo %JAVA_HOME%
            ```
+        * Add bin folder to path environment variable
+            ```
+            setx PATH "%PATH%;%JAVA_HOME%\bin"
+            ```
+        * Make sure java -version is showing JAVA 8 or JAVA 11
 
 3. **Python** (optional): For PySpark, Python 3.6 or later is required.
-    * Download Python from the official Python website.
+    * Download Python from the official [Python website](https://www.python.org/).
     * Add Python to the system PATH.
+        * Verify in cmd by using command python --version
+
+## Step-by-Step Installation Guide
+
+### Step 1: Install Winutils
+    * Spark on Windows requires Hadoop's winutils.exe.
+    * Download the [winutils repository](https://github.com/cdarlint/winutils)
+    * Extract the zip file and copy the latest version (Currently it's 3.3.5)
+    * Set the HADOOP_HOME variable, using the following command
+      ```
+      setx HADOOP_HOME "C:\hadoop\hadoop-3.3.5"
+      ```
+    * Add the bin folder into path variable
+      ```
+      setx PATH "%PATH%;%HADOOP_HOME%\bin"
+      ```
