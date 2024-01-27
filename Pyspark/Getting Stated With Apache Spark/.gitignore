@@ -1,0 +1,6 @@
+#local database
+metastore_db/
+
+derby.log/
+#locally stored sample data
+Sample\ Data/
