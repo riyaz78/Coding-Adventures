@@ -32,11 +32,27 @@ Functions/Methods are utilities that allow for manipulation of DataFrames, inclu
 
 ### Examples
 
-    * **Column Operations: 'withColumn','drop','rename'**
+**Column Operations: 'withColumn','drop','rename'**
+
     ```
         modified_df = df.withColumn('age_double', df['age'] * 2)  # Adds a new column with age doubled
         
     ```
+**Type conversion: cast.**
+    ```
+        df_with_casted_column = df.withColumn('age', df['age'].cast('string'))  # Casts the 'age' column to string type
+
+    ```
+
+**Handling missing data: fillna, dropna**
+    ```
+       df_no_nulls = df.fillna({'age': 0})  
+
+    ```
+
+### Conclusion
+
+Data Frames offer a wide range of methods for data manipulation and analysis. Understanding the differences between Actions, Transformations, and Functions/Methods is crucial in effectively utilizing DataFrames in data processing and analysis.
 
 
     
