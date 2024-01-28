@@ -8,17 +8,18 @@ Actions are operations that trigger computation and return values. They are used
 
 ### Examples
     ```
-        df.show()  # Displays the first 20 rows of the DataFrame
-        num_rows = df.count() # Gets the total row count
-        first_row = df.first() # Retrieves the first rows
-        first_n_rows = df.take(5) # Retrieves the first 5 rows
-        rows = df.collect() # Collects all rows into a list
+      df.show()  # Displays the first 20 rows of the DataFrame
+      num_rows = df.count() # Gets the total row count
+      first_row = df.first() # Retrieves the first rows
+      first_n_rows = df.take(5) # Retrieves the first 5 rows
+      rows = df.collect() # Collects all rows into a list
     ```
 ## 2. Transformations
 
 Transformations are operations tjat produce new DataFrames. They do not trigger computation immediately but define a new DataFrame based on the transformation applied.
 
 ### Examples
+
      ```
       filtered_df = df.filter(df['age'] > 30) # Filters row where age is grater than 30
       selected_df = df.select('name','age') # Selects only the 'name' and 'age' columns
@@ -33,11 +34,13 @@ Functions/Methods are utilities that allow for manipulation of DataFrames, inclu
 ### Examples
 
 1. **Column Operations: 'withColumn','drop','rename'**
+
       ```
         modified_df = df.withColumn('age_double', df['age'] * 2)  # Adds a new column with age doubled
         
       ```
 2. **Type conversion: cast.**
+
       ```
         df_with_casted_column = df.withColumn('age', df['age'].cast('string'))  # Casts the 'age' column to string type
 
