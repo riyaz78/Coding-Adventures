@@ -39,12 +39,14 @@ Functions/Methods are utilities that allow for manipulation of DataFrames, inclu
         
     ```
 **Type conversion: cast.**
+
     ```
         df_with_casted_column = df.withColumn('age', df['age'].cast('string'))  # Casts the 'age' column to string type
 
     ```
 
 **Handling missing data: fillna, dropna**
+
     ```
        df_no_nulls = df.fillna({'age': 0})  
 
