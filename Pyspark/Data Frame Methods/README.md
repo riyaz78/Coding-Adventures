@@ -32,20 +32,18 @@ Functions/Methods are utilities that allow for manipulation of DataFrames, inclu
 
 ### Examples
 
-**Column Operations: 'withColumn','drop','rename'**
-
-    ```
+1. **Column Operations: 'withColumn','drop','rename'**
+      ```
         modified_df = df.withColumn('age_double', df['age'] * 2)  # Adds a new column with age doubled
         
-    ```
-**Type conversion: cast.**
-
-    ```
+      ```
+2. **Type conversion: cast.**
+      ```
         df_with_casted_column = df.withColumn('age', df['age'].cast('string'))  # Casts the 'age' column to string type
 
-    ```
+      ```
 
-**Handling missing data: fillna, dropna**
+3. **Handling missing data: fillna, dropna**
 
     ```
        df_no_nulls = df.fillna({'age': 0})  
