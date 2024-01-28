@@ -22,11 +22,11 @@ Transformations are operations tjat produce new DataFrames. They do not trigger 
 ### Examples
 
      ```
-      filtered_df = df.filter(df['age'] > 30) # Filters row where age is grater than 30
-      selected_df = df.select('name','age') # Selects only the 'name' and 'age' columns
-      grouped_df = df.groupBy('department').count() # Groups by 'department' and counts rows in each group
-      sorted_df = df.orderBy(df['age'].desc()) # Sorts by 'age' in descending order
-      
+      1. filtered_df = df.filter(df['age'] > 30) # Filters row where age is grater than 30
+      2. selected_df = df.select('name','age') # Selects only the 'name' and 'age' columns
+      3. grouped_df = df.groupBy('department').count() # Groups by 'department' and counts rows in each group
+      4. sorted_df = df.orderBy(df['age'].desc()) # Sorts by 'age' in descending order
+
      ```
 
 ## 3. Functions/Methods
