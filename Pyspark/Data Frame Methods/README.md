@@ -13,6 +13,7 @@ Actions are operations that trigger computation and return values. They are used
       first_row = df.first() # Retrieves the first rows
       first_n_rows = df.take(5) # Retrieves the first 5 rows
       rows = df.collect() # Collects all rows into a list
+
     ```
 ## 2. Transformations
 
@@ -25,6 +26,7 @@ Transformations are operations tjat produce new DataFrames. They do not trigger 
       selected_df = df.select('name','age') # Selects only the 'name' and 'age' columns
       grouped_df = df.groupBy('department').count() # Groups by 'department' and counts rows in each group
       sorted_df = df.orderBy(df['age'].desc()) # Sorts by 'age' in descending order
+      
      ```
 
 ## 3. Functions/Methods
