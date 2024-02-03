@@ -3,17 +3,18 @@
 This guide provides basic commands for common Git operations
 
 ## 1. How to clone the code
-    ```bash
-    git clone <repository-url>
-    ```
+
+```bash
+git clone <repository-url>
+```
 
 ## 2. How to Create a Branch
 
 To create a new branch and switch to it 
 
-    ```bash
-    git checkout -b <branch-name>
-    ```
+```bash
+git checkout -b <branch-name>
+```
 
 ## 3. How to Stash changes
 
