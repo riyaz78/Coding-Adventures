@@ -67,23 +67,23 @@ git checkout -b <branch-name>
 
 To commit changes to your repository:
 
-    ```bash
-    git commit -m "Commit message"
-    ```
+```bash
+git commit -m "Commit message"
+```
 ## 5. How to Push
 
 To push changes to a remote repository 
 
-    ```bash
-    git push origin <branch-name>
-    ```
+```bash
+git push origin <branch-name>
+```
 ## 6. How to pull
 
 To pull the latest changes from the remote repository
 
-    ```bash
-    git pull origin <branch-name>
-    ```
+```bash
+git pull origin <branch-name>
+```
 
 
 
