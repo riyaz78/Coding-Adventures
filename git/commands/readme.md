@@ -23,7 +23,7 @@ git checkout -b <branch-name>
 
     1. Suppose you are working on a feature branch and have some chnages but aren't ready to commit them.
     ```bash
-    git stash
+        git stash
     ```
     2. Now you can switch to another branch or perform other Git operations.\
     ```bash
