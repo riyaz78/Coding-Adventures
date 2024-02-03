@@ -3,17 +3,17 @@
 This guide provides basic commands for common Git operations
 
 ## 1. How to clone the code
-```bash
-git clone <repository-url>
-```
+    ```bash
+    git clone <repository-url>
+    ```
 
 ## 2. How to Create a Branch
 
 To create a new branch and switch to it 
 
-```bash
-git checkout -b <branch-name>
-```
+    ```bash
+    git checkout -b <branch-name>
+    ```
 
 ## 3. How to Stash changes
 
@@ -31,7 +31,7 @@ git checkout -b <branch-name>
         ```
     3. Once you are back on the original branch and ready to continue your work, you can apply the stashed changes
         ```bash
-        git stach apply
+        git stash apply
         ```
 
 ## 3. How to add the files which needs to be commited
@@ -62,6 +62,27 @@ git checkout -b <branch-name>
         git status
         ```
 
+## 4. How to commit
+
+To commit changes to your repository:
+
+    ```bash
+    git commit -m "Commit message"
+    ```
+## 5. How to Push
+
+To push changes to a remote repository 
+
+    ```bash
+    git push origin <branch-name>
+    ```
+## 6. How to pull
+
+To pull the latest changes from the remote repository
+
+    ```bash
+    git pull origin <branch-name>
+    ```
 
 
 
