@@ -100,21 +100,25 @@ git pull origin <branch-name>
 ```
 **Insight:** *git pull* combines *git fetch* followed by *git merge* .
 
+
 ## Additional Common Commands
 
 - **Merging Branches:** *git merge <branch-name>* to combine branch changes
 - **Fetching Branches:** *git fetch origin* to download remote updates
 - **Viewing Commit History:** *git log* for a history of commits
 
+
 ## Troubleshooting 
 
 - **Undoing Changes:** Use *git reset* to unstage changes or *git revert* to undo commited changes.
 - **Common Issues:** For resolving merge conflicts, use *git mergetool*.
 
+
 ## Resources
 
 - [Pro Git Book](https://git-scm.com/book/en/v2) - Comprehensive guide to Git
 - [Official Git Documentation](https://git-scm.com/doc) - For in-depth understanding and additional commands
+
 
 ## Conclusion
 
