@@ -21,19 +21,48 @@ git checkout -b <branch-name>
 
 - **How to Use:** 
 
-    1. Suppose you are working on a feature branch and have some chnages but aren't ready to commit them.
-    ```bash
-    git stash
-    ```
-    2. Now you can switch to another branch or perform other Git operations.\
-    ```
-    git checkout another-branch
-    ```
-    3. Once you are back on the original branch and ready to continue your work, you can apply yhe stashed changes
-    ```
-    git stach apply
-    ```
+1. Suppose you are working on a feature branch and have some chnages but aren't ready to commit them.
+```bash
+git stash
+```
+2. Now you can switch to another branch or perform other Git operations.\
+```bash
+git checkout another-branch
+```
+3. Once you are back on the original branch and ready to continue your work, you can apply the stashed changes
+```bash
+git stach apply
+```
 
 ## 3. How to add the files which needs to be commited
+
+- **When to use:**
+
+1. **After making changes:** Whenever you make modifications to your project files, ypu can use *git add* to prepare these changes for the next commit. Staging your changes helps you organize and group related modifications together.
+
+2. **Before each commit**: As a best practice, it is recommended to stage your changes before every commit. This enables you to review and confirm the specific changes that will be included in the upcoming commit.
+
+- **How to use:**
+1. To Stage specific files for the next commit, specify the file names after *git add*. For example
+```bash
+#Stage a single file
+git add file1.txt
+
+#Stage multiple files
+git add file1.txt file2.txt
+```
+
+2. Stage all changes in your working directory using a period *('.')* as follows
+```bash
+git add .
+```
+
+3. Checking the staging status
+```bash
+git status
+```
+
+
+
 
     
