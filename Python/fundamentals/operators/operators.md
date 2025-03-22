@@ -115,7 +115,7 @@ Bitwise operators perform operations at the **bit level** of integer values.
 | `<<`     | Left Shift  | `2 << 1`    | `4`    |
 | `>>`     | Right Shift | `4 >> 1`    | `2`    |
 
-### 👉 How it works (Brief):
+### 👉 How it works :
 - **Binary**: All numbers are converted to binary.
 - `&` (AND) returns 1 only if both bits are 1.
 - `|` (OR) returns 1 if at least one bit is 1.
