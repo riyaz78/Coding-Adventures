@@ -38,6 +38,7 @@ x = 10 / 0  # ZeroDivisionError
 | `NameError`            | Undefined variable                                 | `print(x)` (if x undefined)        |
 | `FileNotFoundError`    | File does not exist                                | `open("no_file.txt")`             |
 | `AttributeError`       | Object lacks specified attribute                   | `[].appendd(1)`                    |
+| `AssertionError`       | Failed assert statement                            | `assert x > 0` (if x<=0>)                    |
 
 ---
 
@@ -58,7 +59,8 @@ BaseException
  │    ├── TypeError
  │    ├── NameError
  │    ├── FileNotFoundError
- │    └── AttributeError
+ │    ├── AttributeError
+ │    └── AssertionError
  └── SystemExit
 ```
 
@@ -116,6 +118,21 @@ except FileNotFoundError:
 finally:
     print("Attempted to read file.")
 ```
+
+---
+
+
+## 🔹 Assertion Errors
+
+An `AssertionError` occurs when an `assert` statement fails.
+
+```python
+x = -5
+assert x >= 0, "x should be positive"
+# Output: AssertionError: x should be positive
+```
+
+- `assert` statements are typically used for debugging purposes, helping to validate assumptions in the code.
 
 ---
 
@@ -194,4 +211,3 @@ score = 120
 if not 0 <= score <= 100:
     raise InvalidScoreError("Score must be between 0 and 100.")
 ```
-
