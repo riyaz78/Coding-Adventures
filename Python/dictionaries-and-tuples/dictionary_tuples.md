@@ -6,7 +6,7 @@ This guide covers two important Python data structures: **Dictionaries** and **T
 
 # 🧾 Dictionaries in Python
 
-Dictionaries are **unordered**, **mutable**, and **indexed** collections used to store **key-value pairs**.
+Dictionaries are **ordered**, **mutable**, and **indexed** collections used to store **key-value pairs**.
 
 ---
 
