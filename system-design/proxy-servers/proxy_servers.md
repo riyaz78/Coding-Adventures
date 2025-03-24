@@ -2,10 +2,10 @@
 
 Proxy servers are essential intermediaries connecting clients and servers, enhancing security, performance, and privacy. They broadly fall into two categories:
 
-- **Forward Proxy**
-- **Reverse Proxy**
+- [**Forward Proxy**](#-what-is-a-forward-proxy)
+- [**Reverse Proxy**](#-what-is-a-reverse-proxy)
 
-Let’s dive into each one with detailed explanations, engaging visuals, practical Python examples using FastAPI, and real-world scenarios involving Azure cloud resources.
+Let’s dive into each one with detailed explanations
 
 ---
 
@@ -141,6 +141,3 @@ Run the backend server using Uvicorn:
 ```
 uvicorn backend_server:app --port 5001
 ```
-
-
-
